@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timestamp Microservice</title>
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+        body {
+            font-family: Roboto;
+            background: #2D2A32;
+        }
+        .info {
+            position:absolute;
+            top:50%;
+            transform:translateY(-50%);
+            left:0;
+            right:0;
+            margin:auto;
+            padding:30px 50px;
+            max-width:600px;
+            background: #FAFDF6;
+            color:#2D2A32;
+            font-weight: bold;
+        }
+        .info > * {
+            margin: 5px 0;
+        }
+        .black {
+            color:black;
+        }
+        .blue {
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="info">
+        <h1>API : Timestamp</h1>
+        <br>
+        <h4><b class="black">API ENDPOINT : </b></h4>
+        <code><h3>GET /api/timestamp/:datestring</h3></code>
+        <code><h3>GET /api/timestamp (IT WILL GIVE CURRENT TIMESTAMP) </h3></code>
+        <br>
+        <h4><b class="black">datestring FORMAT : </b></h4>
+        <code>
+            yyyy-m-d (2014-10-5)<br>
+            yyyy-m (2014-10)<br>
+            d-m-yyyy (5-10-2014)<br>
+            Unix time (1412121600000)
+        </code>
+        <br><br>
+        <h4><b class="black">JSON Object : </b></h4>
+        <code>
+            {
+                "unix" : &lt;int:unix-time>,
+                "utc" : &lt;string:utc-date>
+            }
+        </code>
+        <br><br>
+        <h4><b class="black">Try : </b></h4>
+        <a class="blue" href="/api/timestamp/2014-5">/api/timestamp/2014-5</a>
+        <br>
+        <a class="blue" href="/api/timestamp/1398902400000">/api/timestamp/1398902400000</a>
+        <br>
+        <a href="/api/timestamp" class="blue">/api/timestamp</a>
+    </div>
+</body>
+</html>
