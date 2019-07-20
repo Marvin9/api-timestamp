@@ -27,3 +27,4 @@ GET /api/timestamp (Current timestamp)
   "utc" : <string:utc-date>
 }
 ```
+## [Try Here](https://marvin9-api-timestamp.glitch.me/)
