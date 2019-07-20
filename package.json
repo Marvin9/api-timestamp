@@ -1,0 +1,17 @@
+{
+  "name": "timestamp",
+  "version": "1.0.0",
+  "description": "api that gives unix and utc time object for given date.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "start" :  "node index.js"
+  },
+  "keywords": [
+    "timestamp",
+    "api",
+    "fcc"
+  ],
+  "author": "mayursiinh",
+  "license": "ISC"
+}
